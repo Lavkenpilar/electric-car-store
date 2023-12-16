@@ -2,16 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex-direction: column;
+}
+body { 
+    display: flex;
+    justify-content: center;
 }
 .card {
-    width: 350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
     border: 0.5px solid #333;
     border-radius: 8px;
     overflow: hidden;
-}
+    justify-content: center;
+    }
 
 .card > .card-body {
     display: flex;
@@ -28,6 +34,17 @@
     padding: 10px 25px;
 }
 .galeria {
+    padding: 20px;
+    max-width: 1500px;
     display: flex;
     flex-wrap:wrap ;
+    gap: 20px;
+}
+@media (min-width:768px){
+    .card {
+        width: 350px;
+    }
+   .galeria {
+    justify-content: center;
+   } 
 }
