@@ -20,6 +20,18 @@ menu {
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
 }
+.nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav > a {
+    text-decoration: none;
+    color: blue;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -114,6 +126,17 @@ body {
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
   }
+@media (max-width:576px){
+    .nav {display:none}
+}
+@media (min-width:576px) {
+    .card {
+        width: 45%;
+    }
+    menu > img { 
+        display: none;
+    }
+}
 @media (min-width:768px){
     .card {
         width: 350px;
