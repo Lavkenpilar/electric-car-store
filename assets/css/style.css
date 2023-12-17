@@ -6,15 +6,32 @@
 menu {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    background-color: mediumblue;
+    padding: 30px;
 }
 .menu-body {
     display: flex;
     gap: 10px;
 }
-.tamaño {
-    width: 15px;
-
+.menu-body > h3 {
+    color: white;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: darkgray;
+}
+p {
+    font-size: 20px;
+}
+select {
+    padding: 10px 150px; 
+    }
+body {
+    background-color: lightgrey;
 }
 .galeria {
     padding: 20px;
@@ -23,6 +40,7 @@ menu {
     flex-wrap:wrap ;
     gap: 20px;
     justify-content: space-around;
+    background-color: lightgrey;
 }
 .card {
     width: 100%;
@@ -49,6 +67,17 @@ menu {
 .card > .card-body > button {
     padding: 10px 25px;
 }
+.pagination {
+    display: inline-block;
+  }
+
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
 
 @media (min-width:768px){
     .card {
