@@ -3,10 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*.main-container {
+menu {
     display: flex;
-    justify-content: center;
-}*/
+    justify-content: space-between;
+    margin: 20px;
+}
+.menu-body {
+    display: flex;
+    gap: 10px;
+}
+.tamaño {
+    width: 15px;
+
+}
 .galeria {
     padding: 20px;
     max-width: 1678px;
